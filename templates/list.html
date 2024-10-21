@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.item_obj {
+  background-color: white;
+}
+
+div.item_obj:hover {
+  background-color: #F1F5F2;
+}
+
+div.item_obj img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+<h2>Image Gallery</h2>
+
+
+
+<div class="responsive">
+  <div class="item_obj">
+    <a target="_blank" href="https://ticketimage.interpark.com/Play/image/large/24/24008917_p.gif">
+      <img src="https://ticketimage.interpark.com/Play/image/large/24/24008917_p.gif" alt="비밀의 화원" width="600" height="100%" style="padding: 10px;">
+    </a>
+    <div class="desc">비밀의 화원<br>2024.08.01 ~2024.09.22<br><a href="https://tickets.interpark.com/goods/24008917">> Ticket Link</a></div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="item_obj">
+    <a target="_blank" href="https://ticketimage.interpark.com/Play/image/large/24/24008243_p.gif">
+      <img src="https://ticketimage.interpark.com/Play/image/large/24/24008243_p.gif" alt="시데레우스" width="600" height="100%" style="padding: 10px;">
+    </a>
+    <div class="desc">시데레우스<br>2024.07.24 ~2024.10.13<br><a href="https://tickets.interpark.com/goods/24008243">> Ticket Link</a></div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="item_obj">
+    <a target="_blank" href="https://ticketimage.interpark.com/Play/image/large/24/24009039_p.gif">
+      <img src="https://ticketimage.interpark.com/Play/image/large/24/24009039_p.gif" alt="홍련" width="600" height="100%" style="padding: 10px;">
+    </a>
+    <div class="desc">홍련<br>2024.07.30 ~2024.10.20<br><a href="https://tickets.interpark.com/goods/24009039">> Ticket Link</a></div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="item_obj">
+    <a target="_blank" href="https://ticketimage.interpark.com/Play/image/large/24/24000651_p.gif">
+      <img src="https://ticketimage.interpark.com/Play/image/large/24/24000651_p.gif" alt="아트" width="600" height="100%" style="padding: 10px;">
+    </a>
+    <div class="desc">ART<br>2024.02.13 ~2024.05.12<br><a href="https://tickets.interpark.com/goods/24000651">> Ticket Link</a></div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+  <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
+  <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
+</div>
+
+</body>
+</html>

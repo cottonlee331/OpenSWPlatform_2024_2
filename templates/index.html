@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='main.js') }}" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__logo">
+            <a href="">LogoHere</a>
+            <ul class="account__logout">
+                <li><a href="/login">로그인</a>
+                <li><a href="/signin">회원가입</a>
+            </ul>
+            <ul class="account__login">
+                <li><a href="/logout">로그아웃</a>
+                <li><a href="/mypage">마이페이지</a>
+                <li><a href="/mypage"><img src ="/static/image/user_img.png" width="48px;" height="48px" style="background-color: white;"></a>
+            </ul>
+        </div>
+        <a href="#" class="navbar__toogleBtn">
+            <i class="fas fa-bars"></i>
+        </a>
+    </nav>
+    <section>
+        {%block section%}
+        {%endblock section%}
+    </section>
+</body>
+</html>
